@@ -1,4 +1,6 @@
-# jira-issue-scayla
+# assign to our QA
 
-When adding a change that can go into production, use the purge link to reset the JSDelivr file.
-https://purge.jsdelivr.net/gh/nicokupferscayla/jira-issue-scayla@latest/script.js
+When deploying to QA, go to the DEPLOY TO ... filter (at the top) and then run this script.
+
+To run it, add a bookmark to your browser with the URL:
+`javascript:https://purge.jsdelivr.net/gh/nicokupferscayla/assign-to-peter@latest/script.js`
