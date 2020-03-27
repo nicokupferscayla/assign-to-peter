@@ -1,19 +1,32 @@
 var jira______peter = 'jira\.scayla\.com';
 var assignTo;
 
-if (window.location.href.match(jira______peter)) {
-    addButton_____peter();
-}
+setInterval(() => {
+
+    if (window.location.href.match(jira______peter) && (window.location.href.match(/quickFilter=(227|228)/))) {
+        if (!jQuery('#assign_toooo').length) {
+            addButton_____peter();
+        }
+    } else {
+        removeButton______peter();
+    }
+
+}, 200);
 
 function addButton_____peter() {
     var elem = document.createElement('button');
     elem.onclick = runCode______peter;
     elem.innerHTML = 'Assign to...';
+    elem.id = 'assign_toooo'
     elem.style.cssText =
         'z-index:10000000;position: fixed; top: 3px; right: 465px;' +
         'background-color:#2684ff; display: inline-block; padding: 8px;color: #eee;border: 0;' +
         'font-weight: bold;font-size: 13px;border-radius: 4px';
     document.body.appendChild(elem);
+}
+
+function removeButton______peter() {
+    jQuery('#assign_toooo').remove();
 }
 
 /**
@@ -59,9 +72,9 @@ function typeMollAndPressEnter(callback) {
         setTimeout(() => {
             jQuery('.aui-list-item').removeClass('active');
             setTimeout(() => {
-                jQuery(`[id*="${ assignTo }"]`).addClass('active');
+                jQuery(`[id*="${assignTo}"]`).addClass('active');
                 setTimeout(() => {
-                    jQuery(`[id*="${ assignTo }"]`).click();
+                    jQuery(`[id*="${assignTo}"]`).click();
                     setTimeout(() => {
                         jQuery('.aui-button.submit').click();
                         setTimeout(() => {
