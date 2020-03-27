@@ -10,7 +10,7 @@ if (window.location.href.match(jira______scayla)) {
         runCode______scayla();
 
         check_check_check_check2_____scayla = setInterval(() => {
-            if (!isDialogOpen_____scayla()) {
+            if (!isDialogOpen_____scayla() ) {
                 addButton_____scayla();
                 clearInterval(check_check_check_check2_____scayla);
             }
