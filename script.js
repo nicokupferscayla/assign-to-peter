@@ -10,7 +10,7 @@ function addButton_____peter() {
     elem.onclick = runCode______peter;
     elem.innerHTML = 'Assign to...';
     elem.style.cssText =
-        'z-index:10000000;position: fixed; top: 3px; right: 550px;' +
+        'z-index:10000000;position: fixed; top: 3px; right: 465px;' +
         'background-color:#2684ff; display: inline-block; padding: 8px;color: #eee;border: 0;' +
         'font-weight: bold;font-size: 13px;border-radius: 4px';
     document.body.appendChild(elem);
